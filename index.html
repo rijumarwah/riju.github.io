@@ -7,83 +7,99 @@
   <title>Your Name</title>
   <style>
     body {
+      margin: 0;
       font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
-      max-width: 700px;
+      background-color: #f4f4f4;
+      color: #222;
+    }
+    .container {
+      display: flex;
+      flex-direction: column;
+      max-width: 800px;
       margin: 40px auto;
       padding: 0 20px;
-      line-height: 1.6;
-      color: #333;
-      background-color: #fdfdfd;
-    }
-    h1, h2, h3 {
-      color: #111;
-    }
-    a {
-      color: #007acc;
-      text-decoration: none;
-    }
-    a:hover {
-      text-decoration: underline;
     }
     header {
       margin-bottom: 40px;
     }
+    h1 {
+      font-size: 2.2rem;
+      margin-bottom: 0.2rem;
+    }
+    nav {
+      margin-top: 10px;
+    }
     nav a {
-      margin-right: 15px;
-      font-weight: bold;
+      margin-right: 20px;
+      text-decoration: none;
+      font-weight: 600;
+      color: #007acc;
+    }
+    nav a:hover {
+      text-decoration: underline;
     }
     section {
       margin-bottom: 40px;
     }
+    h2 {
+      font-size: 1.6rem;
+      margin-bottom: 10px;
+    }
+    ul {
+      list-style-type: disc;
+      padding-left: 20px;
+    }
+    a {
+      color: #0060df;
+    }
+    a:hover {
+      text-decoration: underline;
+    }
   </style>
 </head>
 <body>
-  <header>
-    <h1>Your Name</h1>
-    <p>Computer Scientist · Researcher · Developer</p>
-    <nav>
-      <a href="#projects">Projects</a>
-      <a href="#publications">Publications</a>
-      <a href="#contact">Contact</a>
-    </nav>
-  </header>
+  <div class="container">
+    <header>
+      <h1>Your Name</h1>
+      <p>Hi there, I'm Riju! A developer interested in web and systems programming.</p>
+      <nav>
+        <a href="#about">About</a>
+        <a href="#projects">Projects</a>
+        <a href="#publications">Blog</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </header>
 
-  <section id="about">
-    <h2>About Me</h2>
-    <p>
-      A short bio about who you are, what you do, and your research or work interests.
-    </p>
-  </section>
+    <section id="about">
+      <h2>About</h2>
+      <p>
+        I'm exploring various web APIs and open-source technologies. Recently tried out the Generic Sensor API on Chrome.
+      </p>
+    </section>
 
-  <section id="projects">
-    <h2>Projects</h2>
-    <ul>
-      <li>
-        <strong>Project Title</strong> – A short description of the project.
-        <br />
-        <a href="https://github.com/yourusername/project">View on GitHub</a>
-      </li>
-    </ul>
-  </section>
+    <section id="projects">
+      <h2>Projects</h2>
+      <ul>
+        <li>
+          <strong>Generic Sensor Demo</strong> – An experiment using browser sensors in real-time.
+          <br />
+          <a href="https://github.com/riju/sensor-demo">View on GitHub</a>
+        </li>
+      </ul>
+    </section>
 
-  <section id="publications">
-    <h2>Publications</h2>
-    <ul>
-      <li>
-        <strong>Paper Title</strong> – Conference/Journal, Year
-        <br />
-        <a href="#">PDF</a>
-      </li>
-    </ul>
-  </section>
+    <section id="publications">
+      <h2>Blog</h2>
+      <p>No blog posts yet.</p>
+    </section>
 
-  <section id="contact">
-    <h2>Contact</h2>
-    <p>Email: <a href="mailto:you@example.com">you@example.com</a></p>
-    <p>
-      <a href="https://github.com/yourusername">GitHub</a> ·
-      <a href="https://linkedin.com/in/yourusername">LinkedIn</a>
-    </p>
-  </section>
+    <section id="contact">
+      <h2>Contact</h2>
+      <p>Email: <a href="mailto:you@example.com">you@example.com</a></p>
+      <p>
+        <a href="https://github.com/riju">GitHub</a>
+      </p>
+    </section>
+  </div>
 </body>
 </html>
